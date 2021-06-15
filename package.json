@@ -1,0 +1,22 @@
+{
+  "name": "lonely-universe-testbed",
+  "version": "1.0.0",
+  "description": "Experimenting with Kaboom.js and game design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clatrobe00/lonely-universe-testBed.git"
+  },
+  "author": "Charles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clatrobe00/lonely-universe-testBed/issues"
+  },
+  "homepage": "https://github.com/Clatrobe00/lonely-universe-testBed#readme",
+  "dependencies": {
+    "kaboom": "^0.5.1"
+  }
+}
