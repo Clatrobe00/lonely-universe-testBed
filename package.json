@@ -2,7 +2,7 @@
   "name": "lonely-universe-testbed",
   "version": "1.0.0",
   "description": "Experimenting with Kaboom.js and game design",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
