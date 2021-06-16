@@ -1,24 +1,36 @@
-const kaboom = require("kaboom");
-
-const k = kaboom({
+kaboom({
 	global: true,
 	fullscreen: true,
-	scale: 2,
+	scale: 1,
 	debug: true,
-	clearColor: [0, 0, 0, 1],
+	clearColor: [0,0,0,1],
   });
-k.init();
+
+// load sprites and assets
+
+loadSprite('ground', 'https://i.imgur.com/XiKmSAF.png');
 
 // define a scene
-k.scene("main", () => {
+scene("main", () => {
+	layers(['bg', 'obj', 'ui'], 'onj')
 
-	// add a text at position (100, 100)
-	k.add([
-		k.text("ohhimark", 32),
-		k.pos(100, 100),
-	]);
+	const map = [
+		'                              ',
+		'                              ',
+		'                              ',
+		'                              ',
+		'                              ',
+		'==============================',
+	]
 
+	const mapConfig = {
+		width: 20,
+		height: 20,
+		'=': [sprite('ground', solid())]
+	}
+
+	const level = addLevel(map, mapConfig);
 });
 
 // start the game
-k.start("main");
+start("main");
