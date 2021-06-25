@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Clatrobe00/lonely-universe-testBed#readme",
   "dependencies": {
-    "electron": "^13.1.4",
     "kaboom": "^0.5.1"
   }
 }
