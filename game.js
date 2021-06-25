@@ -9,7 +9,8 @@ kaboom({
 // load sprites and assets
 
 loadSprite('ground', 'https://i.imgur.com/XiKmSAF.png');
-loadSprite('pcSprite', 'https://i.imgur.com/wYkQb1S.png')
+loadSprite('pcSprite', 'https://i.imgur.com/wYkQb1S.png');
+loadSprite('pcSprite2', 'https://i.imgur.com/oRATzbh.png');
 
 // define a scene
 scene("main", () => {
@@ -31,18 +32,22 @@ scene("main", () => {
 		pc.move(-100);
 	});
 
+	pc.action(() => {
+		camPos(pc.pos)
+	})
+
 // config map	
 
 	const map = [
-		'                              ',
-		'                              ',
-		'                              ',
-		'                              ',
-		'                              ',
-		'                              ',
-		'                              ',
-		'                              ',
-		'==============================',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'                              			 ',
+		'========================================',
 	]
 
 	const mapConfig = {
