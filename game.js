@@ -1,7 +1,7 @@
 kaboom({
 	global: true,
 	fullscreen: true,
-	scale: 1,
+	scale: 2,
 	debug: true,
 	clearColor: [0,0,0,1],
   });
@@ -15,6 +15,9 @@ scene("main", () => {
 	layers(['bg', 'obj', 'ui'], 'onj')
 
 	const map = [
+		'                              ',
+		'                              ',
+		'                              ',
 		'                              ',
 		'                              ',
 		'                              ',
