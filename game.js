@@ -32,6 +32,13 @@ scene("main", () => {
 		pc.move(-100);
 	});
 
+	keyDown("space" , () => {
+		if (pc.grounded()) {
+			pc.jump(320);
+		}
+
+	})
+
 	pc.action(() => {
 		camPos(pc.pos)
 	})
